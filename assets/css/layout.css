@@ -1,0 +1,99 @@
+/*----------------------
+layout
+----------------------*/
+
+/* row */
+.row {
+	clear: both;
+	overflow: hidden;
+}
+	/* row colors */
+	
+	.row--portfolio{ background: #FAFAFA; }
+	.row--presentation{ 
+		background: #14839d; 
+		color: #fff;
+	}
+	.row--header,
+	.row--footer { 
+		background: #22292b;
+		color: #fff;
+	 }
+	.row--contact{ 
+		background: #2444AD; 
+		color: #fff;
+	}
+	/* row padding */
+	.row--padding-medium{} 
+	.row--padding-wide{
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+
+/* container */
+.container-narrow,
+.container-medium,
+.container-wide
+{
+	margin: 0 auto;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+.container-narrow
+{
+	max-width: 34em;
+}
+
+.container-medium
+{
+	max-width: 52em;
+}
+
+.container-wide
+{
+	max-width: 58em;
+}
+/*columns*/
+.col-narrow,
+.col-narrow--right { margin-bottom: 0; }
+
+/* ---------------
+WIDE
+--------------- */
+@media (min-width: 38em) 
+{
+	.row--padding-wide{
+		padding-top: 5.5556em;
+		padding-bottom: 5.5556em;
+		/* 100px/18px */
+	}
+	.container-narrow,
+	.container-medium,
+	.container-wide
+	{
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+
+	.col-narrow,
+	.col-wide { float: left; }
+
+	.col-narrow--right,
+	.col-medium--right,
+	.col-wide--right { float: right; }
+
+	.col-wide,
+	.col-wide--right { width: 61%; }
+
+	.col-medium,
+	.col-medium--right { width: 50%; }
+
+	.col-narrow,
+	.col-narrow--right
+	{
+		width: 25%;
+		margin-bottom: 1.5em;
+	}
+
+}

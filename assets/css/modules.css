@@ -1,0 +1,263 @@
+/* ---------------------
+LAYOUT
+--------------------- */
+
+/* HEADER */
+
+.header__logo
+{
+	float: left;
+	padding-top: 1em;
+}
+
+.header__nav ul
+{
+	list-style: none;
+	display: inline-flex;
+	flex-wrap: nowrap;
+	float: right;
+	padding: 10px 0;
+	margin: 0;
+}
+
+.header__nav li a 
+{
+	padding: 15px 0.3em;
+	margin: 0 0.7em;
+	display: block;
+	text-decoration: none;
+	color: #ecf0f1;
+}
+.header__nav li a:hover 
+{
+	color: #14839D;
+	border-bottom: 3px solid #14839D;
+	padding-bottom: 10px;
+}
+
+.header__nav-portfolio 
+{
+	border-right: 1px solid #14839D;
+	border-left: 1px solid #14839D;
+}
+
+/* PRESENTATION */
+
+.presentation__photo 
+{
+	width: 33%;
+	float: left;
+}
+.presentation__about h1
+{
+	font-size: 2.5em;
+	color: #fff;
+}
+
+.presentation__skills h2
+{
+	color: #fff;
+	font-weight: bold;
+}
+
+.presentation__skills ul
+{
+	margin-bottom: 0;
+	list-style: none;
+	padding: 0;
+}
+
+.presentation__skills li 
+{
+	width: 100%;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 0.5em; 
+	
+}
+
+.presentation__skills #skill-1
+{
+	float: left;
+	margin-right: 1em; 
+}
+
+.skill-progress
+{
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+
+
+/* PROGRESS BAR STYLE*/
+
+.skill-progress progress
+{
+	/*-web-kit-appearance: progress-bar;  *//* n funciona*/
+	box-sizing: border-box;
+	margin: 0;
+}
+
+progress::-moz-progress-bar
+{ 
+	background: #13BE40; 
+	border-radius: 30px;
+}
+
+progress[value]{
+	background-color: #fff; 
+	border: 0;
+	border-radius: 30px;
+}
+
+.skill-progress--value
+{
+	clear: both;
+	font-size: 10px;
+	position: relative;
+	left: -30px;
+	color: #000;
+}
+
+/* PORTFOLIO */
+
+.portfolio-items img 
+{ 
+	float: left;
+	margin-right: 10px; 
+}
+
+.port__item1,
+.port__item2,
+.port__item3
+{
+	display: inline-block;
+	padding: 1.1111em;
+	margin: auto 0;
+	
+}
+
+.portfolio-title h2
+{ 
+	display: inline-block;
+	margin-left: 0.8em;
+	padding-bottom: 0.3em;
+	border-bottom: 3px solid #424242;
+}
+
+/* CONTACT */
+
+.contato-title h2
+{ 
+	color: #fff;  
+	margin-bottom: 1em;
+	padding-bottom: 0.3em;
+	display: inline-block;
+	width: auto !important;
+	border-bottom: 3px solid #fff;
+}
+
+.contato-form form input,
+.contato-form form textarea
+{
+	font-size: 1em;
+	font-family: 'Arvo', serif;
+}
+
+.contato-form form input
+{
+	display: block;
+	border: 0;
+	margin-bottom: 10px;
+	padding: 10px;
+	
+}
+
+.contato-form fieldset 
+{
+	border: 0 !important;
+	padding: 0;
+	margin: 0;
+}
+
+.contato-form form textarea
+{
+	height: 150px;
+	width: 500px;
+	resize: none;
+	border: 0;
+	font-size: 1em !important;
+	padding: 10px;
+}
+
+.contato-form input[type="submit"]
+{
+	margin-top: 10px;
+	background: #fff;
+	color: #424242;
+	cursor: pointer;
+}
+
+.contato-form input[type="submit"]:hover
+{
+	background: #13BE40;
+	color: #fff;
+	cursor: pointer;
+	-webkit-transition:background 0.1s ease-in-out;
+	-moz-transition:background 0.1s ease-in-out;
+	transition:background-color 0.1s ease-in-out;
+}
+/* FOOTER */
+.footer
+{
+	display: flex;
+	justify-content: center;
+}
+
+.footer-social ul
+{
+	display: flex;
+	flex-wrap: nowrap;
+	padding: 0 5px;
+	margin-left: 10px;
+	max-width: 300px;
+	list-style: none; 
+	border-left: 1px solid #fff;
+}
+
+.footer-social li
+{
+	margin: 0 10px;
+}
+
+
+.footer-social a:visited { color: #fff; }
+.footer-social a:hover { color: #2444AD; }
+
+/* ---------------------
+WIDE
+--------------------- */
+
+@media (min-width: 38em)
+{
+	.portfolio-items img 
+	{
+		clear: both; 
+		margin-bottom: 0.3em; 
+	}
+
+	.portfolio-items p { text-align: center; }
+
+	.port__item1,
+	.port__item2,
+	.port__item3
+	{
+		display: inline-block;
+		max-width: 16.66em !important;
+
+	}
+
+	
+
+}
