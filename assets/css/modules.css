@@ -28,7 +28,7 @@ LAYOUT
 
 .header__nav li a 
 {
-	padding: 15px 0.3em;
+	padding: 10px 0.3em;
 	margin: 0 0.7em;
 	display: block;
 	text-decoration: none;
@@ -38,7 +38,7 @@ LAYOUT
 {
 	color: #14839D;
 	border-bottom: 3px solid #14839D;
-	padding-bottom: 10px;
+	padding: 6px 0.3em;
 }
 
 .header__nav-portfolio 
