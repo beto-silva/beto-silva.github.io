@@ -13,7 +13,13 @@ LAYOUT
 .header__logo
 {
 	float: left;
-	padding-top: 1em;
+	margin-top: 0.2em;
+	margin-left: 0.5em;
+	padding: 0.3em;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: bold;
+	font-size: 1.5em;
+	border: 1px solid #fff;
 }
 
 .header__nav ul
@@ -22,13 +28,13 @@ LAYOUT
 	display: inline-flex;
 	flex-wrap: nowrap;
 	float: right;
-	padding: 10px 0;
+	padding: 8px 0;
 	margin: 0;
 }
 
 .header__nav li a 
 {
-	padding: 10px 0.3em;
+	padding: 6px 0.3em;
 	margin: 0 0.7em;
 	display: block;
 	text-decoration: none;
@@ -38,7 +44,7 @@ LAYOUT
 {
 	color: #14839D;
 	border-bottom: 3px solid #14839D;
-	padding: 6px 0.3em;
+	padding: 4px 0.3em;
 }
 
 .header__nav-portfolio 
@@ -49,11 +55,25 @@ LAYOUT
 
 /* PRESENTATION */
 
+/* add space between 
+header and presentation
+for mobile screen */
+
+.row--presentation::before
+{
+	content: "";
+	display: block;
+	height: 1.1111em;
+	margin-bottom: 1.1111em;
+}
+
 .presentation__photo 
 {
 	width: 33%;
 	float: left;
 }
+.presentation__about { padding-top: 1em; }
+
 .presentation__about h1
 {
 	font-size: 2.5em;
@@ -76,7 +96,7 @@ LAYOUT
 .presentation__skills li 
 {
 	width: 100%;
-	font-size: 14px;
+	font-size: 0.7777em;
 	font-weight: bold;
 	margin-bottom: 0.5em; 
 	
@@ -154,6 +174,12 @@ progress[value]{
 
 /* CONTACT */
 
+.contato-title,
+.contato-form
+{
+	margin-left: 1em;
+}
+
 .contato-title h2
 { 
 	color: #fff;  
@@ -189,8 +215,8 @@ progress[value]{
 
 .contato-form form textarea
 {
-	height: 150px;
-	width: 500px;
+	height: 8.3333em;
+	width: 27.7777em;
 	resize: none;
 	border: 0;
 	font-size: 1em !important;
@@ -237,7 +263,7 @@ progress[value]{
 	margin: 0 10px;
 }
 
-
+.footer-social a,
 .footer-social a:visited { color: #fff; }
 .footer-social a:hover { color: #2444AD; }
 
@@ -263,6 +289,35 @@ WIDE
 		max-width: 16.66em !important;
 
 	}
+
+	.header__nav ul
+	{
+		list-style: none;
+		display: inline-flex;
+		flex-wrap: nowrap;
+		float: right;
+		padding: 10px 0;
+		margin: 0;
+	}
+
+	.header__nav li a 
+	{
+		padding: 10px 0.3em;
+		margin: 0 0.7em;
+		display: block;
+		text-decoration: none;
+		color: #ecf0f1;
+	}
+
+	.row--presentation::before
+	{
+		content: "";
+		display: block;
+		height: 0;
+		margin-bottom: 0;
+	}
+
+	.header__logo {	font-size: 2em; }
 
 	
 
