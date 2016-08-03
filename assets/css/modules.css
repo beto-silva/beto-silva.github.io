@@ -55,10 +55,6 @@ LAYOUT
 
 /* PRESENTATION */
 
-/* add space between 
-header and presentation
-for mobile screen */
-
 .row--presentation::before
 {
 	content: "";
@@ -148,11 +144,11 @@ progress[value]{
 
 /* PORTFOLIO */
 
-.portfolio-items img 
+/*.portfolio-items img 
 { 
 	float: left;
 	margin-right: 10px; 
-}
+}*/
 
 .port__item1,
 .port__item2,
@@ -160,9 +156,24 @@ progress[value]{
 {
 	display: inline-block;
 	padding: 1.1111em;
-	margin: auto 0;
-	
+	margin: 20px 5px 20px 0;
+	float: left;
 }
+
+.port__thumb 
+{ 
+	width: 300px;
+	height: 250px; 
+}
+
+.port__thumb img:hover 
+{
+	-webkit-box-shadow: 3px 3px 10px #14839D;
+	-moz-box-shadow: 3px 3px 10px #14839D;
+	box-shadow: 3px 3px 10px #14839D;
+}
+
+.portfolio-items p { margin: 0; }
 
 .portfolio-title h2
 { 
