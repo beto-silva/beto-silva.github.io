@@ -10,170 +10,62 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	
 	<title></title>
+	<style type="text/css">
+		section.coming-soon {
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+		.header {
+			width: 600px;
+		}
+		.header-info {
+			font-size: 62px;
+			margin: 40px 0;
+		}
+		.social-icons {
+			list-style: none;
+			padding: 0;
+			display: flex;
+
+		}
+
+		.social-icons > li {
+			margin-right: 10px;
+		}
+
+		.social-icons > li > a {
+			color: #141414;
+			text-decoration: none;
+		}
+
+		.social-icons > li > a:hover {
+			color: #141414;
+			text-decoration: underline;
+		}
+	</style>
 </head>
 <body>
-<!-- HEADER -->
-<div class="row row--header">
-<header class="row container-wide header">
-	<!-- <div class="col-narrow"> -->
-		<div class="header__logo">BS</div>
-<!-- 	</div> -->
-<!-- 	<div class="col-medium- -right"> -->
-	<nav class="header__nav">
-	<ul>
-		<li><a href="#home">Home</a></li>
-		<li class="header__nav-portfolio"><a href="#portfolio">Portfolio</a></li>
-		<li><a href="#contato">Contact</a></li>
-	</ul>
-	</nav>
-<!-- 	</div> -->
-</header>
-</div>
-
-<!-- PRESENTATION -->
-<section class="row row--presentation row--padding-wide" id="home">
-	<div class="row container-medium">
-		<div class="presentation__photo">
-			<img src="assets/img/beto-photo-round2.png">
-		</div>
-		<div class="col-wide--right">
-			<div class="presentation__about">
-				<span style="display: block; margin-top: 20px; font-size: 38px;"><strong>Olá,</strong></span>
-				<p>Me chamo Beto Silva, tenho 20 anos e sou estudante de <strong>Ciência da Computação</strong>. Possuo experiência com edição de vídeos e motion design. A união desses aprendizados me despertaram para o <strong>Front-End</strong>, ao qual agora dedico meus esforços para criar interfaces usáveis.</p>
-			</div>
-			<div class="presentation__skills">
-			<h2>Skills</h2>
-			<div class="col-medium">
-			<ul id="skill-1">
-				<li>HTML5
-					<span class="skill-progress">
-						<progress value="67" max="100"> </progress>
-						<span class="skill-progress--value">67%</span>
-					</span>
+	<section class="coming-soon">
+		<header class="header">
+			<span class="name">Beto da Silva | Desenvolvedor Front - End</span>
+			<ul class="social-icons">
+				<li>
+					<a href="http://github.com/betodasilva" target="_blank">
+					<i class="fa fa-github" aria-hidden="true"></i> GitHub
+					</a>
 				</li>
-				<li>CSS3
-					<span class="skill-progress">
-						<progress value="62" max="100"></progress>
-						<span class="skill-progress--value">62%</span>
-					</span></li>
-				<li>Javascript
-					<span class="skill-progress">
-						<progress value="38" max="100"></progress>
-						<span class="skill-progress--value">38%</span>
-					</span>
+				<li>
+					<a href="http://twitter.com/betounderline" target="_blank">
+					<i class="fa fa-twitter" aria-hidden="true"></i> Twitter
+					</a>
 				</li>
-				<li>Bootstrap
-					<span class="skill-progress">
-						<progress value="40" max="100"></progress>
-						<span class="skill-progress--value">40%</span>
-					</span>
-				</li>
+				
 			</ul>
-			</div>
-			<div class="col-medium--right">
-			<ul id="skill-2">
-				<li>Photoshop
-					<span class="skill-progress">
-						<progress value="78" max="100"> </progress>
-						<span class="skill-progress--value">78%</span>
-					</span>
-				</li>
-				<li>Illustrator
-					<span class="skill-progress">
-						<progress value="66" max="100"> </progress>
-						<span class="skill-progress--value">66%</span>
-					</span>
-				</li>
-				<li>After Effects
-					<span class="skill-progress">
-						<progress value="81" max="100"> </progress>
-						<span class="skill-progress--value">81%</span>
-					</span>
-				</li>
-				<li>Premiere
-					<span class="skill-progress">
-						<progress value="83" max="100"> </progress>
-						<span class="skill-progress--value">83%</span>
-					</span>
-				</li>
-			</ul>
-			</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- PORTFOLIO -->
-<div class="row row--portfolio row--padding-wide" id="portfolio">
-	<div class="row container-wide">
-		<div class="row portfolio-title">
-		<h2>Portfolio</h2>
-		</div>
-	<div class="row portfolio-items">
-		<div class="port__item1">
-			<div class="port__thumb">
-				<a href="http://betodasilva.github.io/exercicio" target="_blank"><img src="assets/img/project1.jpg"></a>
-			</div>
-			<p>
-			HTML/CSS/Javascript - Projeto Pessoal
-			</p>
-		</div>
-		<div class="port__item2">
-			<div class="port__thumb">
-				<a href="https://betodasilva.github.io/mikelovebrasil/" target="_blank"><img src="assets/img/project2.jpg"></a>
-			</div>
-			<p>
-			Site brasileiro do artista Mike Love (não oficial) | W.I.P
-			</p>
-		</div>
-		<div class="port__item3">
-			<div class="port__thumb">
-				<img src="http://placehold.it/300x225">
-			</div>
-			<p>
-			Coming soon.
-			</p>
-		</div>	
-	</div>
-	</div>
-</div>
-<!-- CONTACT -->
-<div class="row row--contact row--padding-wide" id="contato">
-	<div class="row container-wide">
-	<div class="contato-title">
-	<h2>Contato</h2>
-	</div>
-	<div class="contato-form">
-	<form action="mail.php" method="POST">
-		<fieldset>
-		<input type="text" name="nome" placeholder="Nome" autocomplete="off" maxlength="30">
-		<input type="text" name="assunto" placeholder="Assunto" autocomplete="off" maxlength="30">
-		<input type="email" name="email" placeholder="seuemail@email.com" autocomplete="off" maxlength="30"> 
-		<textarea name="mensagem" placeholder="Digite seu texto aqui">
-		</textarea>
-		<input type="submit" name="submit" value="Enviar">
-		</fieldset>
-	</form>
-	</div>
-		
-	</form>
-	</div>
-</div>
-<!-- FOOTER -->
-<div class="row row--footer">
-	<footer class="row container-wide footer">
-		<div class="footer-copyright">
-			<p>Made with code, spotify and coffe</p>
-		</div>
-
-		<div class="footer-social">
-			<ul>
-				<li><a href="http://facebook.com/betodasilva.me"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-				<li><a href="http://twitter.com/_Beto_Silva"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-				<li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-			</ul>
-		</div>
-	</footer>
-</div>
-
+			<h2 class="header-info">Uma nova página está sendo construída</h2>
+		</header>
+	</section>
 </body>
 </html>
